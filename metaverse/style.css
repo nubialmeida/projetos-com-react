@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
+
+:root {
+    --white: #eee;
+    --blue: #0066ff;
+    --grey: #aaa;
+    --green: #9dff2d;
+    --black: #1f1f1f;
+    --medium-black: #0e1011;
+    --dark-black: #0c1014;
+    --inner-image-scale: 300px;
+    --social-image-scale: 30px;
+    --section-image-scale: 300px;
+    --section-image-border: 30px;
+    --video-bg-height: 900px;
+}
+
+* {
+    font-family: "Koulen", cursive;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    color: var(--white);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background: rgb(12, 16, 20);
+    background: linear-gradient(
+        180deg,
+        rgba(12, 16, 20, 1) 0%,
+        rgba(21, 39, 87, 1) 100%
+    );
+}
+
+a {
+    text-decoration: none;
+    color: var(--grey);
+}
+
+header.container,
+header.container nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+}
+
+header.container {
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 0 40px;
+    background-color: var(--medium-black);
+}
+
+header.container nav {
+    width: 20%;
+    justify-content: space-evenly;
+    background-color: var(--black);
+}
+
+.logo {
+    max-width: var(--social-image-scale);
+    max-height: var(--social-image-scale);
+}
+
+#write-line {
+    background-color: var(--black);
+    padding: 5px 10px;
+    width: 350px;
+    height: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#cursor {
+    height: 100%;
+    width: 8px;
+    background-color: var(--grey);
+}
+
+.video {
+    margin-top: 60px;
+    height: 500px;
+    position: relative;
+}
+
+.video video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#button-video {
+    position: absolute;
+    bottom: -30px;
+    left: 50px;
+    height: 50px;
+    width: 300px;
+    border-radius: 10px;
+    background: var(--dark-black);
+    background: linear-gradient(
+        0deg,
+        var(--dark-black) 0%,
+        rgba(21, 39, 87, 1) 100%
+    );
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.presentation {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.presentation * {
+    width: 100%;
+}
+
+.white-line {
+    height: 10px;
+    width: 100vw;
+    background-color: #645eac;
+}
+
+.video-bg {
+    position: relative;
+    height: var(--video-bg-height);
+}
+
+.video-row {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    position: absolute;
+    flex-direction: row;
+    z-index: -1;
+    height: var(--video-bg-height);
+}
+
+.video-row div {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: var(--video-bg-height);
+    width: 100vw;
+}
+
+.demo {
+    width: 100vw;
+}
+
+section.container,
+.line div {
+    display: flex;
+    flex-direction: column;
+}
+
+.know-more {
+    height: fit-content;
+}
+
+.h500 {
+    height: 300px;
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.line div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.money {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 500px;
+    background-color: var(--medium-black);
+}
+
+.text {
+    width: 300px;
+    word-wrap: wrap;
+}
+
+.text-title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.text-content {
+    font-size: 20px;
+}
+
+section.container {
+    height: 600px;
+}
+
+.section-text {
+    width: 500px;
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+.section-text p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#image-group {
+    display: flex;
+    flex-direction: row-reverse;
+    height: fit-content;
+}
+
+.section-img {
+    max-width: var(--section-image-scale);
+    max-height: var(--section-image-scale);
+}
+
+.line1 {
+    display: flex;
+    flex-direction: row;
+    padding: 25px 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-title {
+    font-size: 50px;
+    font-weight: bold;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-image {
+    width: var(--inner-image-scale);
+    height: var(--inner-image-scale);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-image small {
+    color: var(--grey);
+    margin-top: 8px;
+}
+
+.inner-image img {
+    max-width: var(--inner-image-scale);
+    max-height: var(--inner-image-scale);
+}
+
+.category-sells {
+    font-size: 12px;
+    line-height: 17px;
+    color: #3bbff0;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.pre-footer {
+    width: 100%;
+    height: 200px;
+    background-image: url("./imgs/multiverse.png");
+    background-size: cover;
+    background-position: bottom 15% right 50%;
+}
+
+footer.container {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    padding: 0 40px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--black);
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-links ul {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.footer-links ul li {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.social-list {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.social-media {
+    height: var(--social-image-scale);
+    width: var(--social-image-scale);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media img {
+    max-height: var(--social-image-scale);
+    max-width: var(--social-image-scale);
+}
