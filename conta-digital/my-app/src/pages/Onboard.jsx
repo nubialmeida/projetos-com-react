@@ -15,7 +15,7 @@ export default function Onboard() {
             setUserInfo(info);
         }
         getData(); */
-        // setLoading(false);
+        setLoading(false);
     }, []);
 
     return (
@@ -24,7 +24,6 @@ export default function Onboard() {
                 <Loading />
             ) : (
                 <div>
-                    Onboard
                     <OnboardComponent {...userInfo} />
                 </div>
             )}

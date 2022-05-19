@@ -2,9 +2,11 @@ import React from "react";
 
 export default function Loading() {
     return (
-        <>
-            <img src="../assets/images/loadng-buffering.gif" alt="loading" />
-            <span>Carregando...</span>
-        </>
+        <div className="loading">
+            <img
+                src={require("../assets/images/loading-buffering.gif")}
+                alt="loading"
+            />
+        </div>
     );
 }

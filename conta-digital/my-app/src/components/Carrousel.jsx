@@ -20,48 +20,48 @@ export default function Carrousel() {
     }
 
     return (
-        <div class="images">
-            <div class="images-slide">
+        <div className="images">
+            <div className="images-slide">
                 <img
                     src={require("../assets/images/logo.png")}
-                    className={`image img1 ${showImage === 1 ? "show" : false}`}
+                    className={`image img1 ${showImage === 1 ? "show" : ""}`}
                     alt="logo-green"
                 />
                 <img
                     src={require("../assets/images/leaf.png")}
-                    className={`image img2 ${showImage === 2 ? "show" : false}`}
+                    className={`image img2 ${showImage === 2 ? "show" : ""}`}
                     alt="folha"
                 />
                 <img
                     src={require("../assets/images/img1.png")}
-                    className={`image img1 ${showImage === 3 ? "show" : false}`}
+                    className={`image img1 ${showImage === 3 ? "show" : ""}`}
                     alt="sustentabilidade"
                 />
             </div>
 
-            <div class="text-slide">
-                <div class="texts">
-                    <div class="text-group">
+            <div className="text-slide">
+                <div className="texts">
+                    <div className="text-group">
                         <h2>Saia do vermelho com a Green!</h2>
                         <h2>Torne seu bolso mais leve.</h2>
                         <h2>O seu banco sustentável.</h2>
                     </div>
                 </div>
 
-                <div class="bullets">
+                <div className="bullets">
                     <span
                         onClick={(e) => moveSlider(e)}
-                        className={showImage === 1 ? "active" : false}
+                        className={showImage === 1 ? "active" : ""}
                         data-value="1"
                     ></span>
                     <span
                         onClick={(e) => moveSlider(e)}
-                        className={showImage === 2 ? "active" : false}
+                        className={showImage === 2 ? "active" : ""}
                         data-value="2"
                     ></span>
                     <span
                         onClick={(e) => moveSlider(e)}
-                        className={showImage === 3 ? "active" : false}
+                        className={showImage === 3 ? "active" : ""}
                         data-value="3"
                     ></span>
                 </div>

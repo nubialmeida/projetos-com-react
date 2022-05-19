@@ -10,10 +10,9 @@ export default function RegisterComponents() {
     const [userPassword, setUserPassword] = useState("");
 
     return (
-        <form>
+        <form className="register-form">
             <InputComponent
                 type="text"
-                id="name"
                 description="Nome"
                 placeholder="NomeFantasia"
                 value={userName}
@@ -21,7 +20,6 @@ export default function RegisterComponents() {
             />
             <InputComponent
                 type="text"
-                id="email"
                 description="email"
                 placeholder="email@email.com"
                 value={userEmail}
@@ -29,7 +27,6 @@ export default function RegisterComponents() {
             />
             <InputComponent
                 type="text"
-                id="phone"
                 description="telefone"
                 placeholder="(00)00000-0000"
                 value={userPhone}
@@ -37,7 +34,6 @@ export default function RegisterComponents() {
             />
             <InputComponent
                 type="date"
-                id="date"
                 description="data de nascimento"
                 placeholder="00/00/0000"
                 value={userDate}
@@ -45,7 +41,6 @@ export default function RegisterComponents() {
             />
             <InputComponent
                 type="number"
-                id="CPF"
                 description="CPF"
                 placeholder="000.000.000-00"
                 value={userCpf}
@@ -53,7 +48,6 @@ export default function RegisterComponents() {
             />
             <InputComponent
                 type="password"
-                id="password"
                 description="Senha"
                 placeholder="********"
                 value={userPassword}
